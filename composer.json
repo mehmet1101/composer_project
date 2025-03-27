@@ -1,49 +1,17 @@
-// composer.json
 {
+    "name": "mehme/opdracht_unittest_calculator",
     "autoload": {
         "psr-4": {
-            "Login\\classes\\": "src/"
+            "VoorbeeldUnittest\\": "src/"
         }
+    },
+    "authors": [
+        {
+            "name": "mehmetku",
+            "email": "9016885@student.zadkine.nl"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^11.5"
     }
 }
-
-// Verplaats alle bestanden naar de juiste mapstructuur
-// src/User.php
-<?php
-namespace Login\classes;
-
-use PDO;
-
-class User {
-    // Code voor de User klasse
-}
-
-// src/index.php
-<?php
-require_once "../vendor/autoload.php";
-
-use Login\classes\User;
-
-$user = new User();
-// Overige code
-
-// src/login_form.php
-<?php
-require_once "../vendor/autoload.php";
-
-use Login\classes\User;
-
-// Code voor inloggen
-
-// src/register_form.php
-<?php
-require_once "../vendor/autoload.php";
-
-use Login\classes\User;
-
-// Code voor registratie
-
-// Database verbinding (db.php blijft zoals het is, tenzij refactoring nodig is)
-
-// Voer na deze aanpassingen het volgende commando uit in de terminal:
-// composer dump-autoload
